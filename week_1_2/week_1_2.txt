@@ -1,0 +1,165 @@
+Command ps - displays a snapshot of all current processes
+Common Syntax $ ps [options]
+Example $ ps -ef
+Show every process running, formatted as a table
+Command top - displays a live status of current processes
+Common Syntax $ top [options]
+Example $ top
+Show a live view of all current processes
+Command bg - resume a background suspended a job
+Common Syntax $ bg [job_spec …]
+Example $ xterm
+Ctrl-Z
+$ bg
+Continue running a job that was previously suspended (using Ctrl-Z) in the back
+Command clear – clear a terminal screen
+Common Syntax $ clear
+Example $ clear
+Clear all prior text from the terminal screen
+Command history – print history of commands in the current session
+Common Syntax $ history [options]
+Example $ history
+#1) touch: Create a new file or update its timestamp.
+• Syntax: touch [OPTION]…[FILE]
+• Example: Create empty files called ‘file1’ and ‘file2’
+• $ touch file1 file2
+#2) cat: Concatenate files and print to stdout.
+• Syntax: cat [OPTION]…[FILE]
+• Example: Create file1 with entered cotent
+• $ cat > file1
+• Hello
+• ^D
+#3) cp: Copy files
+• Syntax: cp [OPTION]source destination
+• Example: Copies the contents from file1 to file2 and the contents of file1 are retained
+• $ cp file1 file2
+#4) mv: Move files or rename files
+• Syntax: mv [OPTION]source destination
+• Example: Create empty files called ‘file1’ and ‘file2’
+• $ mv file1 file2
+#5) rm: Remove files and directories
+• Syntax: rm [OPTION]…[FILE]
+• Example: Delete file1
+•
+$ rm file1
+#6) mkdir: Make a directory
+• Syntax: mkdir [OPTION] directory
+• Example: Create a directory called dir1
+• $ mkdir dir1
+#7) rmdir: Remove a directory
+• Syntax: rmdir [OPTION] directory
+• Example: Create empty files called ‘file1’ and ‘file2’
+• $ rmdir dir1
+#8) cd: Change directory
+• Syntax: cd [OPTION] directory
+• Example: Change working directory to dir1
+• $ cd dir1
+#9) pwd: Print the present working directory
+• Syntax: pwd [OPTION]
+• Example: Print ‘dir1’ if a current working directory is dir1
+#10) ls: List directory contents
+• Syntax: ls [OPTION] [FILE]
+• Example: list all (including hidden files) directory contents, in long format, sorted by
+• $ ls -alt
+•
+•
+•
+$ls -l
+$ls -ltr
+$ls -a
+#11) which: Locate a command
+• Syntax: which [-a] filename
+• Example: List all paths from where ‘cat’ can run
+• $ which -a cat
+#12) man: Interface for working with the online reference manuals.
+• Syntax: man [-s section] item
+• Example: Show the manual page for the ‘cat’ command
+• $ man cat
+#13) su: Change user-id or become super-user.
+• Syntax: su [options] [username]
+• Example: Change user-id to ‘user1’ (if it exists)
+• $ su user1
+#14) sudo: Execute a command as some other user or super-user
+• Syntax: sudo [options] [command]
+• Example: Get a file listing of an unlisted directory
+• $ sudo ls /usr/local/protected
+#15) find: Used to search for files and directories as mentioned in the ‘expression’
+• Syntax: find [starting-point] [expression]
+• Example: In ‘/usr’ folder, find character device files, of the name ‘backup’
+• $ find /usr -type c -name backup
+#16) du: Estimate disk usage is blocks
+• Syntax: du [options] [file]
+• Example: Show the number of blocks occupied by files in the current directory
+• $ du
+#17) df: Show the number of free blocks for the mounted file system
+• Syntax: df [options] [file]
+• Example: Show the number of free blocks in local file systems
+• $ df -l
+#18) cal: Displays the calendar.
+• Syntax: cal [[month] year]
+• Example: display the calendar for April 2018
+• $ cal 4 2018
+#19) date: Displays the system date and time.
+• Syntax: date [+format]
+• Example: Display the date in dd/mm/yy format
+• $ date +%d/%m/%y
+#20) who: Displays the list of users currently logged in
+•
+Syntax: who [option] … [file][arg1]
+
+
+WEEK2
+
+SED COMMAND
+
+sed 's/unix/linux/' geekfile.txt
+Sed ‘s/hello/HELLO/g’ file1.txt
+Sed ‘2 s/hello/HELLO/2g’ file1.txt
+
+Sort Command:
+sort file.txt
+
+chmod Command:
+`+`
+`-`
+`=`
+Definition:
+Add permissions
+Remove permissions
+Set the permissions to the specified values
+
+
+AWK command in Unix:
+awk '/manager/ {print}' employee.txt
+
+
+shutdown command:
+
+$ shutdown -H
+$shutdown -P
+$ shutdown -r now
+$ shutdown -r +5
+$ sudo shutdown 15:00
+$ sudo shutdown +10
+
+
+SSH :ssh [username]@[hostname or IP address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
